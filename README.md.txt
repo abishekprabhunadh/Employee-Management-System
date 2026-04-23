@@ -38,10 +38,10 @@ This application helps manage employee records, including adding, updating, dele
 
 ## 📷 Project Screenshots
 
-![Login](screenshots/login.png)
-![Dashboard](screenshots/dashboard.png)
-![Add Employee](screenshots/add-employee.png)
-![Employee Records](screenshots/employee-records.png)
+![LoginOrSignUp](screenshots/LoginOrSignUp.png)
+![SignUP](screenshots/SignUp.png)
+![Update Employee](screenshots/UpdateEmployee.png)
+![Employee Records](screenshots/DisplayAllEmployees.png)
 
 ---
 
@@ -51,4 +51,4 @@ This project demonstrates CRUD operations, database connectivity, and web applic
 ---
 
 ## 👤 Author
-Abishek Prabhunadh
+Abishek Prabhu Nadh
