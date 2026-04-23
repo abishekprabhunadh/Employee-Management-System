@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<link rel='stylesheet' href=css/Login.css>
+</head>
+<body>
+	<div id="error-message" class="erm"></div>
+	<script>
+	const params=new URLSearchParams(window.location.search);
+	const error=params.get("error");
+	if(error)
+	{
+		document.getElementById("error-message").innerHTML= error;	
+	}
+    </script>
+	<fieldset id="field">
+	<br>
+		<form action="login" method="post">
+			<label for="" class="lab">Enter Email</label>
+			<input type="email" name="email"><br>
+			<label for="" class="lab">Enter Password</label>
+			<input type="password" name="password"><br>
+			<button id="bt">Login</button>
+		</form>
+    </fieldset>
+</body>
+</html>

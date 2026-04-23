@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add</title>
+<link rel='stylesheet' href=css/Add.css>
+</head>
+<body>
+	<div id="error-message" class="erm"></div>
+	<script>
+	const params=new URLSearchParams(window.location.search);
+	const error=params.get("error");
+	if(error)
+	{
+		document.getElementById("error-message").innerHTML= error;	
+	}
+    </script>
+    <fieldset id="field">
+		<form action="add" method="post">
+			<label for="" class="lab">Employee ID</label>
+			<input type="number" name="id"> <br>
+			
+			<label for="" class="lab">Employee Name</label>
+			<input type="text" name="name"> <br>
+			
+			<label for="" class="lab">Employee Mobile</label>
+			<input type="tel" name="mobile"><br>
+			
+			<label for="" class="lab">Employee Department</label>
+			<input type="text" name="department"><br>
+			
+			<label for="" class="lab">Employee Salary</label>
+	        <input type="number" name="salary"><br>
+			<button id="bt">Submit</button>
+		</form>
+    </fieldset>
+	
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Update</title>
+<link rel='stylesheet' href=css/Update.css>
+
+</head>
+<body>
+	<div id="error-message" class="erm"></div>
+	<script>
+	const params=new URLSearchParams(window.location.search);
+	const error=params.get("error");
+	if(error)
+	{
+		document.getElementById("error-message").innerHTML= error;	
+	}
+    </script>
+    <fieldset id="field">
+		<form action="updateEmployee" method="post">
+			<label for="" class="lab">Employee ID To Update</label>
+		    <input type="number" name="id"><br>
+			<button id="bt">Submit</button>
+		</form>
+	</fieldset>
+	
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login Or SignUp</title>
+<link rel='stylesheet' href=css/Home.css>
+</head>
+<body>
+	<div id="error-message" style="color:red; font-size:25px;"></div>
+	<script>
+	const params=new URLSearchParams(window.location.search);
+	const error=params.get("error");
+	if(error)
+	{
+		document.getElementById("error-message").innerHTML= error;	
+	}
+    </script>
+    <br>
+    <h1 id="heading"> Employee Management System</h1>
+	<fieldset id="field">
+		<form action="">
+			<div class="anchors"><a href="HRLogin.html" target="_blank" style="text-decoration:none;" class="a ac">Login</a></div>
+		</form>
+		<br>
+		<form action="">
+			<div class="anchors"><a href="HRSignUp.html" target="_blank" style="text-decoration:none;" class="a">SignUp</a>
+		</form>
+	</fieldset>
+</body>
+</html>

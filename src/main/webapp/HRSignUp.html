@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SignUp</title>
+<link rel='stylesheet' href=css/SignUp.css>
+</head>
+<body>
+	<div id="error-message" style="color:red; font-size:25px;"></div>
+	<script>
+	const params=new URLSearchParams(window.location.search);
+	const error=params.get("error");
+	if(error)
+	{
+		document.getElementById("error-message").innerHTML= error;	
+	}
+    </script>
+    
+    <fieldset id="field">
+		<form action="signUp" method="post">
+			<label for="" class="lab">Enter ID</label>
+			<input type="number" name="id"> <br>
+			<label for="" class="lab">Enter Name</label>
+			<input type="text" name="name"> <br>
+			<label for="" class="lab">Enter Email</label>
+			<input type="email" name="email"><br>
+			<label for="" class="lab">Enter Password</label>
+			<input type="password" name="password"><br>
+			<label for="" class="lab">Enter Mobile</label>
+	        <input type="tel" name="mobile" class="input5"><br>
+			<button id="bt">Sign-Up</button>
+		</form>
+    </fieldset>
+
+</body>
+</html>
